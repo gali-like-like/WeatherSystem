@@ -15,6 +15,7 @@ void ChartView::mousePressEvent(QMouseEvent* e)
     if(e->button() == Qt::LeftButton)
     {
         begin = e->pos();
+	qDebug()<<begin;
     }
     QChartView::mousePressEvent(e);
 }
