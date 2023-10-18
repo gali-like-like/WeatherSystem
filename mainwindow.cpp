@@ -152,26 +152,33 @@ void MainWindow::do_readyRead()
     {
         QJsonValue value = array.at(i);
         QJsonObject subObj = value.toObject();
-        QStringList keys = subObj.keys();
         QString date = subObj.value("date").toString();
         QString temp = subObj.value("temp").toString();
         temp.chop(1);
-        if(temp.contains('/'))
-        {
-            int max = temp.split('/')[0].toInt();
-            int min = temp.split('/')[1].toInt();
-            qDebug()<<QString("%1：[%2,%3]").arg(i).arg(max).arg(min);
-            QDateTime now = QDateTime::currentDateTime().addDays(i);
-            //只能写成QDateTime.toMSecsSinceEpoch();
-            seriesMin->append(now.toMSecsSinceEpoch(),min);
-            seriesMax->append(now.toMSecsSinceEpoch(),max);
-        }
+        QStringList maxMin;
+        if(temp.contains("/"))
+            maxMin = temp.split("/");
+        else if(temp.contains("~"))
+            maxMin = temp.split("~");
+        else
+            maxMin<<temp<<temp;
+        int max = maxMin[0].toInt();
+        int min = maxMin[1].toInt();
+        qDebug()<<QString("%1：[%2,%3]").arg(i).arg(max).arg(min);
+        QDateTime now = QDateTime::currentDateTime().addDays(i);
+        //只能写成QDateTime.toMSecsSinceEpoch();
+        seriesMin->append(now.toMSecsSinceEpoch(),min);
+        seriesMax->append(now.toMSecsSinceEpoch(),max);
         QString weather = subObj.value("weather").toString();
         QString wind = subObj.value("wind").toString();
         QTableWidgetItem* item1 = new QTableWidgetItem(date);
         QTableWidgetItem* item2 = new QTableWidgetItem(temp);
         QTableWidgetItem* item3 = new QTableWidgetItem(weather);
         QTableWidgetItem* item4 = new QTableWidgetItem(wind);
+        item1->setFont(QFont("微软雅黑",16));
+        item2->setFont(QFont("微软雅黑",16));
+        item3->setFont(QFont("微软雅黑",16));
+        item4->setFont(QFont("微软雅黑",16));
         ui->tableWidget->setItem(i,0,item1);
         ui->tableWidget->setItem(i,1,item2);
         ui->tableWidget->setItem(i,2,item3);
@@ -194,6 +201,7 @@ void MainWindow::do_finished()
         seriesMin->attachAxis(axisy);
         seriesMin->attachAxis(dateAxis);
     }
+    ui->comboBox->addItem(ui->comboBox->currentText());
 }
 
 MainWindow::~MainWindow()

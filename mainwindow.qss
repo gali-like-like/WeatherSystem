@@ -1,0 +1,7 @@
+QTableWidget {alternate-background-color:skyblue;background-color:lightblue;selection-background-color:lightskyblue;}
+QHeaderView::section {background-color:lightblue}
+QHeaderView::section:hover:!pressed {background-color:lightskyblue}
+QHeaderView::section:hover:pressed {background-color:skyblue}
+QHeaderView::section:!active {background-color:powerblue}
+QComboBox {background-color:lightblue;selection-background-color:lightskyblue;}
+QComboBox::drop-down {border-width:0px;}

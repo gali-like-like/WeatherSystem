@@ -1,0 +1,9 @@
+8701a4f HEAD@{0}: reset: moving to HEAD^
+de63e40 HEAD@{1}: commit: a.txt第二行末尾加dd
+8701a4f HEAD@{2}: commit: 添加一个a.txt
+b6524be HEAD@{3}: reset: moving to HEAD
+b6524be HEAD@{4}: commit: chartview.cpp增加一个打印
+a8be5f4 HEAD@{5}: commit: main.cpp添加一行打印456
+dbd9ca6 HEAD@{6}: reset: moving to HEAD^
+68d6647 HEAD@{7}: commit: 顺便乱改
+dbd9ca6 HEAD@{8}: commit (initial): 天气预告系统1.0
