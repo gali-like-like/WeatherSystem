@@ -2,6 +2,10 @@ QTableWidget {alternate-background-color:skyblue;background-color:lightblue;sele
 QHeaderView::section {background-color:lightblue}
 QHeaderView::section:hover:!pressed {background-color:lightskyblue}
 QHeaderView::section:hover:pressed {background-color:skyblue}
-QHeaderView::section:!active {background-color:powerblue}
-QComboBox {background-color:lightblue;selection-background-color:lightskyblue;}
+QHeaderView::section:!active {background-color:powderblue}
+QComboBox {background-color:skyblue;selection-background-color:lightskyblue;}
 QComboBox::drop-down {border-width:0px;}
+QMainWindow {background-color:lightblue;}
+QChartView {background-color:lightblue;}
+QToolButton#qt_menubar_ext_button {background-color:lightblue;}
+QTableCornerButton {background-color:lightblue;}

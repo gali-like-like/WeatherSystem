@@ -1,11 +1,22 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
-
+#include <QPushButton>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    this->setWindowFlags(Qt::WindowTitleHint | Qt::WindowStaysOnTopHint | Qt::WindowCloseButtonHint);
+    QList<QAbstractButton*> buttons = this->findChildren<QAbstractButton*>();
+    int countButton = buttons.count();
+    qDebug()<<QIcon::themeSearchPaths();
+    foreach (QAbstractButton* btn, buttons)
+    {
+        qDebug()<<btn->rect();
+        qDebug()<<btn->metaObject()->className();
+        qDebug()<<btn->objectName();
+    }
+    qDebug()<<countButton;
     QNetworkRequest request(QUrl("https://query.asilu.com/weather/baidu"));
     manger = new QNetworkAccessManager(this);
     reply = manger->get(request);
@@ -190,6 +201,7 @@ void MainWindow::do_finished()
 {
     qDebug()<<"完成";
     qDebug()<<"max数据："<<seriesMax->points();
+    qDebug()<<style()->pixelMetric(QStyle::PM_TitleBarHeight);
     chart->setTitle(tr("%1天气预告").arg(arg));
     chart->setTitleFont(QFont("微软雅黑",19));
     if(chart->series().isEmpty())
@@ -201,7 +213,6 @@ void MainWindow::do_finished()
         seriesMin->attachAxis(axisy);
         seriesMin->attachAxis(dateAxis);
     }
-    ui->comboBox->addItem(ui->comboBox->currentText());
 }
 
 MainWindow::~MainWindow()
