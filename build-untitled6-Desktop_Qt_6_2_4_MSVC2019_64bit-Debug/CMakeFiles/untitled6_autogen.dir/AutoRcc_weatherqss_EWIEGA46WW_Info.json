@@ -5,7 +5,11 @@
 	"CMAKE_CURRENT_SOURCE_DIR" : "E:/QT/drawQtProject/QtWidgetsProject/untitled6",
 	"CMAKE_SOURCE_DIR" : "E:/QT/drawQtProject/QtWidgetsProject/untitled6",
 	"INCLUDE_DIR" : "E:/QT/drawQtProject/QtWidgetsProject/untitled6/build-untitled6-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/untitled6_autogen/include",
-	"INPUTS" : [ "E:/QT/drawQtProject/QtWidgetsProject/untitled6/mainwindow.qss" ],
+	"INPUTS" : 
+	[
+		"E:/QT/drawQtProject/QtWidgetsProject/untitled6/weatherSystem.png",
+		"E:/QT/drawQtProject/QtWidgetsProject/untitled6/mainwindow.qss"
+	],
 	"LOCK_FILE" : "E:/QT/drawQtProject/QtWidgetsProject/untitled6/build-untitled6-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/untitled6_autogen.dir/AutoRcc_weatherqss_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,
 	"OPTIONS" : [ "-name", "weatherqss" ],

@@ -362,6 +362,6 @@ E:/QT/drawQtProject/QtWidgetsProject/untitled6/mainwindow.h
  mdp:F:/QT/6.2.4/msvc2019_64/include/QtWidgets/qtwidgetsglobal.h
  mdp:F:/QT/6.2.4/msvc2019_64/include/QtWidgets/qwidget.h
 E:/QT/drawQtProject/QtWidgetsProject/untitled6/chartview.cpp
-E:/QT/drawQtProject/QtWidgetsProject/untitled6/main.cpp
 E:/QT/drawQtProject/QtWidgetsProject/untitled6/mainwindow.cpp
  uic:./ui_mainwindow.h
+E:/QT/drawQtProject/QtWidgetsProject/untitled6/main.cpp

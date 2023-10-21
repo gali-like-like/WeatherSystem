@@ -17,6 +17,7 @@ MainWindow::MainWindow(QWidget *parent)
         qDebug()<<btn->objectName();
     }
     qDebug()<<countButton;
+    this->setWindowIcon(QIcon(":/weatherSystem.png"));
     QNetworkRequest request(QUrl("https://query.asilu.com/weather/baidu"));
     manger = new QNetworkAccessManager(this);
     reply = manger->get(request);

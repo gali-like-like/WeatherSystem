@@ -194,7 +194,7 @@ build untitled6_autogen\timestamp untitled6_autogen\mocs_compilation.cpp | ${cma
 #############################################
 # Custom command for untitled6_autogen\EWIEGA46WW\qrc_weatherqss.cpp
 
-build untitled6_autogen\EWIEGA46WW\qrc_weatherqss.cpp | ${cmake_ninja_workdir}untitled6_autogen\EWIEGA46WW\qrc_weatherqss.cpp: CUSTOM_COMMAND E$:\QT\drawQtProject\QtWidgetsProject\untitled6\weatherqss.qrc CMakeFiles\untitled6_autogen.dir\AutoRcc_weatherqss_EWIEGA46WW_Info.json E$:\QT\drawQtProject\QtWidgetsProject\untitled6\mainwindow.qss F$:\QT\6.2.4\msvc2019_64\.\bin\rcc.exe || untitled6_autogen untitled6_autogen_timestamp_deps
+build untitled6_autogen\EWIEGA46WW\qrc_weatherqss.cpp | ${cmake_ninja_workdir}untitled6_autogen\EWIEGA46WW\qrc_weatherqss.cpp: CUSTOM_COMMAND E$:\QT\drawQtProject\QtWidgetsProject\untitled6\weatherqss.qrc CMakeFiles\untitled6_autogen.dir\AutoRcc_weatherqss_EWIEGA46WW_Info.json E$:\QT\drawQtProject\QtWidgetsProject\untitled6\weatherSystem.png E$:\QT\drawQtProject\QtWidgetsProject\untitled6\mainwindow.qss F$:\QT\6.2.4\msvc2019_64\.\bin\rcc.exe || untitled6_autogen untitled6_autogen_timestamp_deps
   COMMAND = cmd.exe /C "cd /D E:\QT\drawQtProject\QtWidgetsProject\untitled6\build-untitled6-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug && F:\QT\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc E:/QT/drawQtProject/QtWidgetsProject/untitled6/build-untitled6-Desktop_Qt_6_2_4_MSVC2019_64bit-Debug/CMakeFiles/untitled6_autogen.dir/AutoRcc_weatherqss_EWIEGA46WW_Info.json Debug"
   DESC = Automatic RCC for weatherqss.qrc
   restat = 1
@@ -203,7 +203,7 @@ build untitled6_autogen\EWIEGA46WW\qrc_weatherqss.cpp | ${cmake_ninja_workdir}un
 #############################################
 # Phony custom command for CMakeFiles\untitled6_autogen_timestamp_deps
 
-build CMakeFiles\untitled6_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\untitled6_autogen_timestamp_deps: phony F$:\QT\6.2.4\msvc2019_64\.\bin\uic.exe F$:\QT\6.2.4\msvc2019_64\.\bin\moc.exe F$:\QT\6.2.4\msvc2019_64\lib\Qt6Cored.lib F$:\QT\6.2.4\msvc2019_64\lib\Qt6Chartsd.lib F$:\QT\6.2.4\msvc2019_64\lib\Qt6Widgetsd.lib F$:\QT\6.2.4\msvc2019_64\lib\Qt6Networkd.lib
+build CMakeFiles\untitled6_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles\untitled6_autogen_timestamp_deps: phony F$:\QT\6.2.4\msvc2019_64\.\bin\moc.exe F$:\QT\6.2.4\msvc2019_64\.\bin\uic.exe F$:\QT\6.2.4\msvc2019_64\lib\Qt6Cored.lib F$:\QT\6.2.4\msvc2019_64\lib\Qt6Widgetsd.lib F$:\QT\6.2.4\msvc2019_64\lib\Qt6Networkd.lib F$:\QT\6.2.4\msvc2019_64\lib\Qt6Chartsd.lib
 
 
 #############################################
